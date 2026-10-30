@@ -30,7 +30,7 @@ jobs:
 
     steps:
       - name: Checkout source
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Black Duck scan config check
         if: ${{ vars.BLACKDUCKSCA_URL == '' && vars.COVERITY_URL == '' && vars.POLARIS_SERVER_URL == '' && vars.SRM_URL == '' }}
